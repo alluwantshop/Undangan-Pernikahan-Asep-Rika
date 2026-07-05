@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan | Asep & Rika</title>
+    <meta name="description" content="Undangan Pernikahan Asep Darmawan & Rika Nur Safitri">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Lora:ital,wght@0,400;0,600;1,400&family=Great+Vibes&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. Opening Screen -->
+    <div id="opening-screen" class="d-flex flex-column justify-content-center align-items-center text-center">
+        <h3 class="font-lora mb-2 text-gold animate-zoom">Undangan Pernikahan</h3>
+        <h1 class="font-vibes display-1 text-primary-dark mb-4 animate-zoom" id="op-names">A & R</h1>
+        <p class="mb-4 text-muted">Kpd Bpk/Ibu/Saudara/i</p>
+        <button id="btn-buka" class="btn btn-custom rounded-pill px-4 py-2 animate-zoom">Buka Undangan</button>
+    </div>
+
+    <!-- Wrapper Konten Utama -->
+    <div id="main-content" class="d-none">
+        
+        <!-- 2. Hero Section -->
+        <header class="hero-section text-center d-flex flex-column justify-content-center align-items-center bg-pattern position-relative">
+            <div class="ornament-top"></div>
+            <div class="container animate-on-scroll">
+                <p class="font-cinzel text-gold mb-2 tracking-wide">THE WEDDING OF</p>
+                <h1 class="font-vibes display-1 text-primary-dark mb-3" id="hero-names">Asep & Rika</h1>
+                <p class="font-lora text-dark fs-5" id="hero-date">05 Desember 2026</p>
+            </div>
+            <div class="ornament-bottom"></div>
+        </header>
+
+        <!-- 4. Kutipan Section -->
+        <section class="py-5 bg-cream text-center">
+            <div class="container animate-on-scroll">
+                <div class="floral-svg mb-3">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="var(--gold)" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C12 2 9 6 9 10C9 13.866 12 18 12 18C12 18 15 13.866 15 10C15 6 12 2 12 2Z"/><path d="M12 22C12 22 16 19 19 15C22 11 22 8 22 8C22 8 18 8 14 11C10.744 13.442 12 22 12 22Z"/><path d="M12 22C12 22 8 19 5 15C2 11 2 8 2 8C2 8 6 8 10 11C13.256 13.442 12 22 12 22Z"/></svg>
+                </div>
+                <p class="font-lora fst-italic text-muted px-md-5">"Dan di antara tanda-tanda kebesaran-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang."</p>
+                <p class="font-cinzel fw-bold mt-3">( QS : Ar-Rum Ayat 21 )</p>
+            </div>
+        </section>
+
+        <!-- 5. Profil Mempelai -->
+        <section class="py-5 bg-white text-center">
+            <div class="container animate-on-scroll">
+                <h2 class="font-cinzel text-gold mb-5">Mempelai</h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-5 mb-4">
+                        <div class="profile-icon mb-3">A</div>
+                        <h3 class="font-vibes text-primary-dark fs-1" id="nama-pria">Asep Darmawan</h3>
+                        <p class="font-lora mb-0">Putra dari</p>
+                        <p class="font-lora fw-bold" id="ortu-pria">Bapak Rudi & Ibu Lisa</p>
+                    </div>
+                    <div class="col-md-2 d-flex align-items-center justify-content-center mb-4">
+                        <h2 class="font-vibes text-gold display-3">&</h2>
+                    </div>
+                    <div class="col-md-5 mb-4">
+                        <div class="profile-icon mb-3">R</div>
+                        <h3 class="font-vibes text-primary-dark fs-1" id="nama-wanita">Rika Nur Safitri</h3>
+                        <p class="font-lora mb-0">Putri dari</p>
+                        <p class="font-lora fw-bold" id="ortu-wanita">Bapak Arif & Ibu Nur</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Countdown Timer -->
+        <section class="py-5 bg-pink text-center">
+            <div class="container animate-on-scroll">
+                <h3 class="font-cinzel text-dark mb-4">Menuju Hari Bahagia</h3>
+                <div class="row justify-content-center gap-3 timer-container" id="countdown-timer">
+                    <div class="col-auto time-box"><span id="days">00</span><small>Hari</small></div>
+                    <div class="col-auto time-box"><span id="hours">00</span><small>Jam</small></div>
+                    <div class="col-auto time-box"><span id="minutes">00</span><small>Menit</small></div>
+                    <div class="col-auto time-box"><span id="seconds">00</span><small>Detik</small></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Story Timeline -->
+        <section class="py-5 bg-cream">
+            <div class="container animate-on-scroll">
+                <h2 class="font-cinzel text-gold text-center mb-5">Kisah Kami</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h4 class="font-lora fw-bold">Perkenalan</h4>
+                        <p class="text-muted">Sebuah awal pertemuan yang sederhana namun berkesan dimana kita bertemu di sebuah cafe, yang dikenalkan oleh temanku.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4 class="font-lora fw-bold">Pendekatan</h4>
+                        <p class="text-muted">Kita ada niatan untuk memulai pendekatan, lalu kita ada niatan untuk ke jenjang lebih serius.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4 class="font-lora fw-bold">Lamaran</h4>
+                        <p class="text-muted">Langkah pertama menyatukan dua keluarga dalam ikatan suci.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4 class="font-lora fw-bold">Akad & Resepsi</h4>
+                        <p class="text-muted">Hari di mana kami mengikat janji suci untuk selamanya.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Detail Acara -->
+        <section class="py-5 bg-white text-center bg-pattern">
+            <div class="container animate-on-scroll">
+                <h2 class="font-cinzel text-gold mb-5">Detail Acara</h2>
+                <div class="card shadow-sm border-0 rounded-4 p-4 mx-auto" style="max-width: 600px; background: rgba(255,255,255,0.9);">
+                    <h4 class="font-lora fw-bold text-primary-dark">Akad Nikah</h4>
+                    <p id="waktu-akad">08:00 - 09:00 WIB</p>
+                    <hr class="w-25 mx-auto text-gold">
+                    <h4 class="font-lora fw-bold text-primary-dark">Resepsi</h4>
+                    <p id="waktu-resepsi">10:00 - 21:00 WIB</p>
+                    
+                    <div class="mt-4">
+                        <h5 class="font-lora fw-bold text-dark">Lokasi</h5>
+                        <p id="lokasi-nama" class="mb-1">Kantor Kecamatan Cijeruk</p>
+                        <p id="lokasi-alamat" class="text-muted small">8Q2W+RJ3, Wr. Menteng, Kec. Cijeruk, Kabupaten Bogor, Jawa Barat 16740</p>
+                        <a href="#" id="link-maps" target="_blank" class="btn btn-outline-custom mt-2 rounded-pill">Lihat Lokasi di Maps</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. RSVP & Ucapan -->
+        <section class="py-5 bg-cream">
+            <div class="container animate-on-scroll">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="card shadow-sm border-0 rounded-4 p-4">
+                            <h2 class="font-cinzel text-gold text-center mb-4">RSVP & Konfirmasi</h2>
+                            <form id="rsvp-form">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" name="nama" placeholder="Nama Lengkap" required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="number" class="form-control" name="whatsapp" placeholder="Nomor WhatsApp" required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="number" class="form-control" name="jumlah" placeholder="Jumlah Tamu" min="1" max="5" required>
+                                </div>
+                                <div class="mb-3">
+                                    <select class="form-select" name="kehadiran" required>
+                                        <option value="" disabled selected>Konfirmasi Kehadiran</option>
+                                        <option value="Hadir">Hadir</option>
+                                        <option value="Tidak Hadir">Tidak Hadir</option>
+                                        <option value="Masih Ragu">Masih Ragu</option>
+                                    </select>
+                                </div>
+                                <div class="mb-4">
+                                    <textarea class="form-control" name="ucapan" rows="3" placeholder="Tulis ucapan & doa..." required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-custom w-100 rounded-pill" id="btn-submit">
+                                    <span>Kirim Konfirmasi</span>
+                                    <div class="spinner-border spinner-border-sm text-light d-none ms-2" role="status"></div>
+                                </button>
+                                <div id="form-alert" class="alert mt-3 d-none" role="alert"></div>
+                            </form>
+                        </div>
+                        
+                        <!-- 9. Daftar Ucapan -->
+                        <div class="mt-5">
+                            <h4 class="font-cinzel text-center text-dark mb-3">Doa & Ucapan</h4>
+                            <div id="wishes-container" class="wishes-box p-3 bg-white rounded-3 shadow-sm" style="max-height: 300px; overflow-y: auto;">
+                                <p class="text-center text-muted small mt-3">Belum ada ucapan. Jadilah yang pertama!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 12. Penutup & Footer -->
+        <footer class="py-5 bg-pink text-center position-relative">
+            <div class="container animate-on-scroll">
+                <p class="font-lora text-dark mb-4">Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu.</p>
+                <p class="font-cinzel text-gold mb-1">Terima Kasih</p>
+                <h2 class="font-vibes text-primary-dark display-4" id="footer-names">Asep & Rika</h2>
+                <div class="mt-5 text-muted small">
+                    <p>© 2026 The Wedding of Asep & Rika. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Floating Buttons (Hanya Menyisakan Musik dan Scroll To Top) -->
+    <div class="floating-menu">
+        <button id="btn-music" class="float-btn" title="Music On/Off">🎵</button>
+        <button id="btn-top" class="float-btn" title="Scroll to Top">⬆</button>
+    </div>
+
+    <!-- Audio Element -->
+    <audio id="bg-music" loop>
+        <source src="" type="audio/mpeg">
+    </audio>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
