@@ -17,7 +17,7 @@ const config = {
     // Pengaturan Detail Acara
     acara: {
         tanggal: "2026-12-05T08:00:00", 
-        tanggalTeks: "05 Desember 2026",
+        tanggalTeks: "29 Desember 2026",
         akad: {
             waktu: "08:00 - 09:00 WIB"
         },
